@@ -15,6 +15,7 @@ public class StudentService {
     @Autowired
     public StudentService(StudentRepository studentRepository) {
         this.studentRepository = studentRepository;
+
     }
 
     public List<Student> getStudents() {
@@ -22,6 +23,10 @@ public class StudentService {
 
     }
 
+    public void addNewStudent(Student student) {
+        System.out.println(student.toString());
+
+    }
 }
 
 
